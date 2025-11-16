@@ -1,0 +1,73 @@
+main {
+    flex: 1;
+    display: flex;
+
+    background-image: url('../assets/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+.main-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto auto 0;
+    padding-bottom: 228px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .logo{
+    margin-top: 30px;
+    width: 300px;
+    height: auto;
+}
+
+.main-content strong{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.74rem;
+    font-weight: 500;
+
+    margin: 24px 0 32px;
+}
+
+.main-content .pagination{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.pagination button{
+    display: flex;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background: var(--tertiary);
+}
+
+.pagination button svg{
+    margin: auto;
+    width: 22px;
+    height: auto;
+}
+
+.pagination button:disabled{
+    background: var(--primary);
+}
+
+.pagination span{
+    font-size: 1.5rem;
+    line-height: 1.74rem;
+    font-weight: 500;
+}
+
+.pagination button svg path{
+    stroke: var(--background);
+}
