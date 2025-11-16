@@ -1,0 +1,41 @@
+footer{
+    display: flex;
+}
+.footer-content{
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-info, .volume-control{
+    width: 100%;
+    max-width: 400px;
+}
+
+.music-info{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 6px 42px
+}
+
+.artist {
+    text-transform: uppercase;
+}
+
+.music-info svg {
+    grid-row: 1 / 3;
+
+    width: 100%;
+    height: auto;
+}
+
+.music-info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
