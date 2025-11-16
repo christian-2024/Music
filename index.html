@@ -13,33 +13,73 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
+    <div class="app">
+      <header>
+      <div class="header-content">
+        <nav>
+        <ul class="navigation">
           <li>
             <a href="/">Inicio</a>
           </li>
           <li>
             <a href="/">Buscar</a>
           </li>
-          <li>
+          <li class="active">
             <a href="/">Suas bibliotecas</a>
           </li>
         </ul>
       </nav>
+
       <h1>Music Legends</h1>
-      <div>
-        <strong>Christian de Oliveira Stipp</strong>
-        <div><img src="https://github.com/christian-2024.png" alt="Avatar de Christian"/></div>
+
+      <div class="user-profile">
+        <span>Christian Oliveira</span>
+        <div class="avatar">
+          <img src="https://github.com/christian-2024.png" alt="Avatar de Christian"/>
+        </div>
+      </div>
       </div>
     </header>
+
     <main>
-      main
+      <div class="main-content">
+        <img class="logo" src="./assets/logo.png" alt="Music Legends"/>
+        <strong>riot games</strong>
+        <div class="pagination">
+            <button type="button">
+              <img src="./assets/icons/chevron-left.svg" alt="Ícone seta para esquerda" onload="SVGInject(this)"/>
+            </button>
+            <span>1/10</span>
+            <button type="button">
+              <img src="./assets/icons/chevron-right.svg" alt="Ícone seta para direita" onload="SVGInject(this)"/>
+            </button>
+        </div>
+      </div>
     </main>
+
     <footer>
-      footer
+      <div class="footer-content">
+        <div class="music-info">
+          <img src="./assets/icons/heart.svg" alt="Ícone coração" onload="SVGInject(this)"/>
+          <h2>Warrions</h2>
+          <h3 class="artist">riot games ft. imagine dragons</h3>
+        </div>
+        <div class="player-controls">
+            <img src="./assets/icons/repeat.svg" alt="Ícone de repetição" onload="SVGInject(this)"/>
+            <img src="./assets/icons/chevron-left.svg" alt="Ícone de avançar" onload="SVGInject(this)"/>
+            <button type="button" class="play-button">
+                <img src="./assets/icons/play.svg" alt="Ícone de reproduzir" onload="SVGInject(this)"/>
+            </button>
+            <img src="./assets/icons/chevron-right.svg" alt="Ícone de retroceder" onload="SVGInject(this)"/>
+            <img src="./assets/icons/rotate-cw.svg" alt="Ícone de girar" onload="SVGInject(this)"/>
+        </div>
+        <div class="volume-control">
+            <img src="./assets/icons/volume.svg" alt="Ícone de volume" onload="SVGInject(this)"/>
+            <img src="./assets/icons/minimize..svg" alt="Ícone de minimizar" onload="SVGInject(this)"/>
+        </div>
+      </div>
     </footer>
-    
+
+    </div>
   </body>
-  
 </html>
